@@ -1,0 +1,275 @@
+h1 {
+    font-size: 26pt;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.973);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    font-size: 16pt;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.616);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px 10px 0px 10px;
+}
+
+img {
+    width: 90%;
+  
+   
+
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+
+}
+
+#main {
+    margin: 0px 100px 0px 100px;
+}
+
+h2 {
+    font-size: 16pt;
+    text-align: center;
+}
+
+
+h3 {
+   font-size: 20pt;  
+
+}
+
+
+
+#main2 {
+    margin: 0px 100px 0px 100px;
+}
+
+#button {   
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20 pt;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(153, 92, 13);
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid #1a080b;
+}
+
+.top-menu {
+    margin: 0 60px;
+    position: relative;
+    background: #5A394E;    
+    box-shadow: 
+      inset 1px 0 0 rgba(255,255,255,.1), 
+      inset -1px 0 0 rgba(255,255,255,.1), 
+      inset 150px 0 150px -150px rgba(255,255,255,.12), 
+      inset -150px 0 150px -150px rgba(255,255,255,.12);
+  }
+  .top-menu:before,
+  .top-menu:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    height: 3px;
+  }
+  .top-menu:before {
+    top: 0;
+    border-bottom: 1px dashed rgba(255,255,255,.2);
+  }
+  .top-menu:after {
+    bottom: 0;
+    border-top: 1px dashed rgba(255,255,255,.2);
+  }
+  .menu-main {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .menu-main:before, 
+  .menu-main:after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 0;
+    top: 8px;
+    border-top: 18px solid #5A394E;
+    border-bottom: 18px solid #5A394E;
+    transform: rotate(360deg);
+    z-index: -1;
+  }
+  .menu-main:before {
+    left: -30px;
+    border-left: 12px solid rgba(255, 255, 255, 0);
+  }
+  .menu-main:after {
+    right: -30px;
+    border-right: 12px solid rgba(255, 255, 255, 0);
+  }
+  .menu-main li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+  .menu-main a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 30px;
+    font-family: 'PT Sans Caption', sans-serif;
+    color: white;
+    transition: .3s linear;
+  }
+  .menu-main a.current,
+  .menu-main a:hover {background: rgba(0,0,0,.2);}
+  @media (max-width: 680px) {
+  .top-menu {margin: 0;}
+  .menu-main li {
+    display: block;
+    margin-right: 0;
+  }
+  .menu-main:before, 
+  .menu-main:after {content: none;}
+  .menu-main a {display: block;}
+  }
+
+
+  h3 { 
+  font-size: 10;
+
+  }
+
+  #button-top {
+   font-size: 20pt;
+   color: #1a080b;
+  display: inline-block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-radius: 5px;
+  background-color: rgb(238, 229, 108);
+  margin-left: 45%;
+  }
+
+  .button {
+    background-color:#e7e182; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.button:hover {
+  background-color: #e7e182; /* Green */
+  color: white;
+}
+
+.jpg_on_index {
+  text-align: center;
+}
+
+
+img {
+  width: 100%;
+}
+
+/* Собственно сам слайдер */
+.slider{
+  max-width: 250px;
+  position: relative;
+  margin: auto;
+  height: 300px;
+  margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+  object-fit: cover;
+  width: 250px;
+  height: 300px;
+  border: none !important;
+  box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.slider .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  /* Выравнивание текста по горизонтали и по вертикали*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Тень*/
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+  text-align: center;
+}
+.slider-dots_item{
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+  background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
+@keyframes fade {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
